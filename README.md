@@ -1,75 +1,93 @@
-# AI-Job-Market-Analysis
-This project explores **AI/ML job market trends** using a synthetic dataset of 2,000+ global job listings.   It uncovers key insights into hiring patterns, skills in demand, salary ranges, and geographic trends.
+# 🧠 AI/ML Job Market Data Analysis & Visualization
 
-
-# AI Job Market Trends (2023–2025)
-
-This project explores **AI/ML job market trends** using a synthetic dataset of 2,000+ global job listings.  
-It uncovers key insights into hiring patterns, skills in demand, salary ranges, and geographic trends.
+## Overview
+This project analyzes trends, salaries, skills, and hiring patterns in the AI/ML job market. It provides insights on job demand, top locations, experience levels, salary distributions, in-demand skills, and trends over time. Additionally, it demonstrates simple machine learning modeling to predict salaries based on job title and experience level.
 
 ---
 
-# 📂 Dataset Overview
+## Features
 
-The dataset captures:
-- Company and industry information  
-- Job titles and experience levels  
-- Required skills and tools  
-- Salary ranges (USD)  
-- Location & employment type  
-- Posting dates (2023–2025)
+1. **Dataset Exploration**
+   - View dataset shape, columns, and sample data.
+   - Basic statistics and data quality checks.
 
----
+2. **Data Cleaning**
+   - Convert posted dates to datetime format.
+   - Extract median salaries from salary ranges.
 
-# 🎯 Project Objectives
+3. **Exploratory Data Analysis (EDA)**
+   - Top job titles and locations.
+   - Experience level distribution.
+   - Salary distribution and salary vs experience level.
 
-1. Explore global AI/ML job trends  
-2. Identify top roles and locations  
-3. Analyze salary distributions  
-4. Discover the most in-demand skills and tools  
-5. Visualize how AI hiring has evolved over time  
+4. **Trend Analysis**
+   - Monthly job posting trends.
+   - Hiring trends for key roles (Data Scientist, Machine Learning Engineer, Data Engineer).
 
----
+5. **Skill Analysis**
+   - Identify most in-demand skills.
+   - Analyze median salary by skill.
+   - Word cloud of common job titles.
 
-# 🧰 Tech Stack
+6. **Machine Learning**
+   - Simple Linear Regression to predict salary based on job title and experience level.
+   - R² score evaluation.
 
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn)
-- **Google Colab** for interactive analysis
-- **Jupyter Notebook** for storytelling and visualization
+7. **Big Data Integration**
+   - Load dataset into Spark DataFrame for scalable processing.
 
----
-
-# 📊 Key Visualizations
-
-1. **Top 10 Job Titles** — Discover the most frequently listed AI/ML roles  
-2. **Experience Level Distribution** — Analyze how roles are distributed by experience  
-3. **Top 10 Hiring Locations** — Identify where AI talent is most in demand  
-4. **Salary Distribution** — Understand pay trends across experience levels  
-5. **Top 15 In-Demand Skills** — Reveal the most sought-after skills and tools  
-6. **Hiring Trends Over Time** — See how job postings have evolved between 2023–2025  
+8. **Visualizations**
+   - Static plots using Matplotlib & Seaborn.
+   - Interactive plots using Plotly.
 
 ---
 
-# 🧩 Sample Insights
-
-- **Machine Learning Engineer** and **Data Scientist** dominate job postings.  
-- **Python**, **SQL**, and **TensorFlow** remain the most in-demand tools.  
-- Major AI hiring hubs include **San Francisco, London, and Bangalore**.  
-- Senior and mid-level roles offer the highest salary averages.  
-
----
-
-# 📈 Future Improvements
-
-- Build a **salary prediction model** using regression techniques  
-- Deploy an **interactive dashboard** using Plotly or Power BI  
-- Integrate with **real job APIs** for live market tracking  
+## Technologies Used
+- Python 3.x
+- Pandas, NumPy
+- Matplotlib, Seaborn, Plotly, WordCloud
+- Scikit-learn
+- PySpark
+- Google Colab (for cloud-based execution)
 
 ---
 
-# Author
+## Dataset
+- The dataset `ai_job_market.csv` contains AI/ML job postings with the following columns (sample):
+  - `job_title`: Title of the job posting
+  - `location`: Job location
+  - `experience_level`: Required experience level
+  - `salary_range_usd`: Salary range in USD
+  - `posted_date`: Date the job was posted
+  - `skills_required` or `tools_preferred`: Required skills/tools
 
-Yatharth Sharma  
-Data Analyst & Aspiring Data Engineer  
-📍 Sydney, Australia  
+> **Note:** Update the file path in the notebook according to your Google Drive folder structure.
+
+---
+
+## How to Use
+1. Clone or download the repository.
+2. Open the notebook `AI_ML_Job_Market_Analysis.ipynb` in Google Colab.
+3. Mount your Google Drive and update the dataset path.
+4. Run the notebook cells sequentially to generate analysis, visualizations, and ML models.
+
+---
+
+## Insights You Can Get
+- Top AI/ML job titles and their median salaries.
+- Most in-demand skills and tools in the AI/ML market.
+- Salary distributions across different experience levels.
+- Hiring trends over time for key AI/ML roles.
+- Predictive modeling of salary based on job title and experience.
+
+---
+
+## Author
+- Yatharth Sharma
+
+---
+
+## License
+This project is open-source and free to use for learning and educational purposes.
+
 🔗 [LinkedIn](www.linkedin.com/in/vatsyatharth)| [Portfolio](https://github.com/UTSyatharth)
